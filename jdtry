@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         yang京东试用
 // @icon         https://www.jd.com/favicon.ico
-// @namespace    http://tampermonkey.net/bakyang
-// @version      9.9
+// @namespace    http://tampermonkey.net/welldo
+// @version      10.0
 // @description  try to take over the world!
-// @author       Yang
+// @author       Welldo Yang
 // @include       *//try.jd.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
@@ -34,8 +34,7 @@ navall[i].target="_self";
   GM_setValue('stop','flase','flase');
   GM_setValue('blackList',['贴膜','美白','面膜','墨水','手机壳','钢化','iphone','妇女','妇科','少女','胸罩','文胸','减肥','避孕','流量卡','宠物','狗粮','犬粮','猫粮','网课','课程','万门大学']);
   GM_setValue('whiteList', ['mate','v30','5G','手环','智能','洗碗机','空调','消毒柜','净水','华为','路由器']);
- //if (!GM_getValue('blackList')) GM_setValue('blackList',['贴膜','美白','面膜','墨水','手机壳','钢化','iphone','妇女','妇科','少女','胸罩','文胸','减肥','避孕','流量卡','宠物','狗粮','犬粮','猫粮','网课','课程','万门大学']);
- //if (!GM_getValue('whiteList')) GM_setValue('whiteList', ['mate','5G','手环','智能','洗碗机','空调','消毒柜','净水','华为','路由器']);
+
 
     function inWhiteList(string) {
         return GM_getValue('whiteList').some(function (i) {
