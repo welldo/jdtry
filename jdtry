@@ -4,7 +4,7 @@
 // @namespace    http://tampermonkey.net/bakyang
 // @version      10.1
 // @description  try to take over the world!
-// @author       Welldo Yang
+// @author       Welldo_Yang
 // @include       *//try.jd.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
