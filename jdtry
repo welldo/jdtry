@@ -2,7 +2,7 @@
 // @name         yang京东试用
 // @icon         https://www.jd.com/favicon.ico
 // @namespace    http://tampermonkey.net/bakyang
-// @version      10.0
+// @version      10.1
 // @description  try to take over the world!
 // @author       Welldo Yang
 // @include       *//try.jd.com/*
@@ -62,14 +62,14 @@ let stopBtn = document.getElementById('stopBtn')
 startBtn.onclick = function(){
 if (document.cookie.indexOf('limited=1') != -1) return;
 var d = new Date();  
-d.setDate(d.getDate() - 1); //有效期当天 
+d.setDate(d.getHours() + 23);; //有效期当天 
 document.cookie = 'stop=0;expires='+d.toGMTString();//设置cookie 	
 window.location.reload();	
 }
 
 stopBtn.onclick = function(){
 var d = new Date();  
-d.setDate(d.getDate() + 1); //有效期当天 
+d.setDate(d.getHours() + 23); //有效期当天 
 document.cookie = 'stop=1;expires='+d.toGMTString();//设置cookie 	
 }
 
@@ -161,8 +161,8 @@ document.cookie = 'stop=1;expires='+d.toGMTString();//设置cookie
                    }
                     else if ((tiptit.length != 0)&&(document.querySelector('.tip-tit').innerText.indexOf('超过上限') !== -1)){
                          var d = new Date();  
-                         //d.setHours(d.getHours() + 18); //有效期18小时  
-                         d.setDate(d.getDate() + 1); //有效期当天 
+                         d.setHours(d.getHours() + 23); //有效期当天，隔天恢复  
+                         //d.setDate(d.getDate() + 1); //有效期当天 
                          document.cookie = 'stop=1;expires='+d.toGMTString();//设置cookie  
                          document.cookie = 'limited=1;expires='+d.toGMTString();//设置cookie 
                          console.log("您的申请次数已超过上限，准备关闭网页");
