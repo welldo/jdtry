@@ -74,7 +74,7 @@ document.cookie = 'stop=1;expires='+d.toGMTString();//设置cookie
 }
 
 //获取 我要试用 数组
-
+        if (document.querySelector('.root61').innerText.indexOf('try.jd.local') !== -1)  location.replace(location.href)
         var locationHref = document.location.href;
         if(locationHref.indexOf("try.jd.com/activity/getActivityList")>=0){
             // debugger;
