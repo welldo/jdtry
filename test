@@ -1,8 +1,8 @@
 import random
 k = random.randint(0,200) 
-print("RRR：",k)
+print("RRR:",k)
 sn0 = int("0015")  
-print("sn0：",sn0)
+print("sn0:",sn0)
 sn_new = sn0 + 11 * k
 sn_new_4 = str(sn_new).zfill(4)   
 sn = "1840ODN" + str(sn_new_4) + "00"  
@@ -16,7 +16,7 @@ mac2 = "0011328F" + str.upper(format(mac_new+1,"x"))
 mac3 = "0011328F" + str.upper(format(mac_new+2,"x"))
 mac4 = "0011328F" + str.upper(format(mac_new+3,"x"))
 
-print("MAC1：",mac1)
-print("MAC2：",mac2)
-print("MAC3：",mac3)
-print("MAC4：",mac4)
+print("MAC1:",mac1)
+print("MAC2:",mac2)
+print("MAC3:",mac3)
+print("MAC4:",mac4)
