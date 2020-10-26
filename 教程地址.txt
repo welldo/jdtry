@@ -1,0 +1,7 @@
+﻿链接：https://pan.baidu.com/s/17eyRRSrFUQVSKdYwIcDsHg 提取码：jddk 
+
+https://bunearth.m.jd.com/babelDiy/Zeus/4SJUHwGdUQYgg94PFzjZZbGZRjDd/index.html#/home
+
+
+在线版地址：
+javascript:!function(){function c(){var d=document.getElementById("loadJs"),e=document.createElement("script");d&&document.getElementsByTagName("head")[0].removeChild(d),e.id="loadJs",e.type="text/javascript",e.onerror=function(){return b==a.length-1?(alert("%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5%EF%BC%81%E8%AF%B7%E7%A8%8D%E5%90%8E%E5%86%8D%E5%B0%9D%E8%AF%95%E5%90%A7%EF%BC%81"),void 0):(b++,c(),void 0)},e.src=a[b],document.getElementsByTagName("head")[0].appendChild(e)}var a=[`https://krapnik.cn/tools/JDCouponAssistant/bundle.js?_=${new Date().getTime()}`],b=0;c()}();
