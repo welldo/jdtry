@@ -2,7 +2,7 @@
 // @name         yang京东试用
 // @icon         https://www.jd.com/favicon.ico
 // @namespace    http://tampermonkey.net/bakyang
-// @version      10.1
+// @version      10.3
 // @description  try to take over the world!
 // @author       Welldo_Yang
 // @include       *//try.jd.com/*
@@ -33,7 +33,7 @@ navall[i].target="_self";
 }
   GM_setValue('stop','flase','flase');
   GM_setValue('blackList',['贴膜','美白','面膜','墨水','手机壳','钢化','iphone','妇女','妇科','少女','胸罩','文胸','减肥','避孕','流量卡','宠物','狗粮','犬粮','猫粮','网课','课程','万门大学']);
-  GM_setValue('whiteList', ['mate','v30','5G','手环','智能','洗碗机','空调','消毒柜','净水','华为','路由器']);
+  GM_setValue('whiteList', ['华为','5G','手环','智能','路由器'，'显示器','电视']);
 
 
     function inWhiteList(string) {
@@ -154,6 +154,14 @@ document.cookie = 'stop=1;expires='+d.toGMTString();//设置cookie
                    if ((tiptit.length != 0)&&(document.querySelector('.tip-tit').innerText.indexOf('申请成功') !== -1))
 		               {
                          showMsg("试用申请成功，准备关闭网页");
+		  	                 window.opener = null; 
+		  	                 window.open(' ', '_self', ' '); 
+			                   window.close(); 
+                         GM_setValue('stop','flase','flase');
+                   }
+		    else if ((tiptit.length != 0)&&(document.querySelector('.tip-tit').innerText.indexOf('种草官') !== -1))
+		               {
+                         showMsg("需要种草官级别，准备关闭网页");
 		  	                 window.opener = null; 
 		  	                 window.open(' ', '_self', ' '); 
 			                   window.close(); 
